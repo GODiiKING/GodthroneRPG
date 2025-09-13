@@ -34,6 +34,14 @@
 **GodthroneRPG** represents a modern take on classic turn-based RPGs, combining nostalgic gameplay elements with contemporary game design principles. Built on the robust Kaplay engine, the game features a modular architecture that supports complex gameplay systems while maintaining performance and extensibility.
 
 ![GodthroneRPG Gameplay](GodthroneRPGgame.png)
+![GodthroneRPG Gameplay](1.png)
+![GodthroneRPG Gameplay](2.png)
+![GodthroneRPG Gameplay](3.png)
+![GodthroneRPG Gameplay](5.png)
+![GodthroneRPG Gameplay](6.png)
+![GodthroneRPG Gameplay](7.png)
+![GodthroneRPG Gameplay](8.png)
+![GodthroneRPG Gameplay](9.png)
 
 The game emphasizes strategic decision-making, character progression, and immersive storytelling through its carefully crafted mechanics and atmospheric pixel-art presentation.
 

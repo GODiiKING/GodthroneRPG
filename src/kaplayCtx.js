@@ -27,9 +27,15 @@ const k = kaplay({
 });
 
 // Add these with your existing sprite loading
-k.loadSprite("goblin", "/enemies/goblin.png");
-k.loadSprite("skeleton", "/enemies/skeleton.png");
-k.loadSprite("boss", "/enemies/boss.png");
+k.loadSprite("ven", "/enemies/ven.png");
+k.loadSprite("khalifa", "/enemies/khalifa.png");
+k.loadSprite("joker", "/enemies/joker.png");
+k.loadSprite("hoodini", "/enemies/hoodini.png");
+k.loadSprite("vancuba", "/enemies/vancuba.png");
+k.loadSprite("chaos", "/enemies/chaos.png");
+k.loadSprite("spider", "/enemies/spider.png");
+k.loadSprite("opriser", "/enemies/opriser.png");
+k.loadSprite("kami", "/enemies/kami.png");
 k.loadSprite("wrazzix", "/enemies/wrazzix.png"); //Block 3 //! Wrazzix
 k.loadSprite("officer", "/enemies/officer.png");
 k.loadSprite("mongen", "/enemies/mongen.png"); //Block 2 //! Mongen

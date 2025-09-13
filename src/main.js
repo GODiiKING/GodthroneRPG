@@ -13,11 +13,22 @@ k.scene("playground", () => {
   const player = makePlayer(k.center(), "Alpha Tester");
   player.setControls();
 
-  // Create an enemy entity //! Mongen
+
+
+
+
+
+
+
+
+
+
+
+  // Create an enemy entity //! spider
   makeEnemy(
     k.vec2(1000, 300), // Position of the enemy
-    "Mongen", // Name of the enemy
-    "mongen", // Sprite ID
+    "Spider", // Name of the enemy
+    "spider", // Sprite ID
     {
       name: "ringPattern", // Shader name
       uniforms: () => ({
@@ -71,6 +82,20 @@ k.scene("playground", () => {
     ]
   );
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // Create another enemy entity //! Wrazzix
   makeEnemy(
     k.vec2(600, 300), // Position of the enemy
@@ -102,8 +127,211 @@ k.scene("playground", () => {
   );
 
 
-  makeEnemy(
+
+
+
+
+
+
+
+
+
+  makeEnemy( // Create another enemy entity //! Opriser
+    k.vec2(800, 550), // Different position
+    "Opriser", // Changed name
+    "opriser", // Sprite ID
+    {
+      name: "spiralPattern", // Shader name
+      uniforms: () => ({
+        // Uniforms for the shader
+        u_time: k.time(),
+        u_color: k.Color.fromHex("#4883bd"),
+        u_aspect: 1,
+        u_opacity: 0.6,
+      }),
+    },
+    {
+      // Stats for the enemy
+      attack: 6,
+      defense: 2,
+      health: 10,
+      maxHealth: 10,
+      illness: {
+        type: null,
+        recurringDamage: 0,
+      },
+      exp: 12,
+    },
+    [{ name: "spear", target: "enemy", effect: "harm", value: 7 }] // Inventory of the enemy
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  makeEnemy( // Create another enemy entity //! Mongen
+    k.vec2(900, 450), // Different position
+    "Mongen", // Changed name
+    "mongen", // Sprite ID
+    {
+      name: "spiralPattern", // Shader name
+      uniforms: () => ({
+        // Uniforms for the shader
+        u_time: k.time(),
+        u_color: k.Color.fromHex("#4883bd"),
+        u_aspect: 1,
+        u_opacity: 0.6,
+      }),
+    },
+    {
+      // Stats for the enemy
+      attack: 6,
+      defense: 2,
+      health: 10,
+      maxHealth: 10,
+      illness: {
+        type: null,
+        recurringDamage: 0,
+      },
+      exp: 12,
+    },
+    [{ name: "spear", target: "enemy", effect: "harm", value: 7 }] // Inventory of the enemy
+  );
+
+
+
+
+
+
+
+
+
+
+  makeEnemy( // Create another enemy entity //! Ven
+    k.vec2(900, 750), // Different position
+    "Ven", // Changed name
+    "ven", // Sprite ID
+    {
+      name: "spiralPattern", // Shader name
+      uniforms: () => ({
+        // Uniforms for the shader
+        u_time: k.time(),
+        u_color: k.Color.fromHex("#4883bd"),
+        u_aspect: 1,
+        u_opacity: 0.6,
+      }),
+    },
+    {
+      // Stats for the enemy
+      attack: 6,
+      defense: 2,
+      health: 10,
+      maxHealth: 10,
+      illness: {
+        type: null,
+        recurringDamage: 0,
+      },
+      exp: 12,
+    },
+    [{ name: "spear", target: "enemy", effect: "harm", value: 7 }] // Inventory of the enemy
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+  makeEnemy( // Create another enemy entity //! Kami
     k.vec2(400, 150), // Different position
+    "Kami", // Changed name
+    "kami", // Sprite ID
+    {
+      name: "spiralPattern", // Shader name
+      uniforms: () => ({
+        // Uniforms for the shader
+        u_time: k.time(),
+        u_color: k.Color.fromHex("#4883bd"),
+        u_aspect: 1,
+        u_opacity: 0.6,
+      }),
+    },
+    {
+      // Stats for the enemy
+      attack: 6,
+      defense: 2,
+      health: 10,
+      maxHealth: 10,
+      illness: {
+        type: null,
+        recurringDamage: 0,
+      },
+      exp: 12,
+    },
+    [{ name: "spear", target: "enemy", effect: "harm", value: 7 }] // Inventory of the enemy
+  );
+
+
+
+
+
+
+
+  makeEnemy( // Create another enemy entity //! Chaos
+    k.vec2(900, 850), // Different position
+    "Chaos", // Changed name
+    "chaos", // Sprite ID
+    {
+      name: "spiralPattern", // Shader name
+      uniforms: () => ({
+        // Uniforms for the shader
+        u_time: k.time(),
+        u_color: k.Color.fromHex("#4883bd"),
+        u_aspect: 1,
+        u_opacity: 0.6,
+      }),
+    },
+    {
+      // Stats for the enemy
+      attack: 6,
+      defense: 2,
+      health: 10,
+      maxHealth: 10,
+      illness: {
+        type: null,
+        recurringDamage: 0,
+      },
+      exp: 12,
+    },
+    [{ name: "spear", target: "enemy", effect: "harm", value: 7 }] // Inventory of the enemy
+  );
+
+
+
+
+
+
+
+  makeEnemy(
+    k.vec2(600, 650), // Different position
     "Officer", // Changed name
     "officer", // Sprite ID
     {
@@ -132,10 +360,14 @@ k.scene("playground", () => {
   );
 
 
-  makeEnemy(
-    k.vec2(400, 150), // Different position
-    "Officer", // Changed name
-    "officer", // Sprite ID
+
+
+
+
+  makeEnemy( // Create another enemy entity //! Khalifa
+    k.vec2(400, 850), // Different position
+    "Khalifa", // Changed name
+    "khalifa", // Sprite ID
     {
       name: "spiralPattern", // Shader name
       uniforms: () => ({
@@ -160,6 +392,44 @@ k.scene("playground", () => {
     },
     [{ name: "spear", target: "enemy", effect: "harm", value: 7 }] // Inventory of the enemy
   );
+
+
+
+
+
+
+  makeEnemy( // Create another enemy entity //! Hoodini
+    k.vec2(600, 850), // Different position
+    "Hoodini", // Changed name
+    "hoodini", // Sprite ID
+    {
+      name: "spiralPattern", // Shader name
+      uniforms: () => ({
+        // Uniforms for the shader
+        u_time: k.time(),
+        u_color: k.Color.fromHex("#4883bd"),
+        u_aspect: 1,
+        u_opacity: 0.6,
+      }),
+    },
+    {
+      // Stats for the enemy
+      attack: 6,
+      defense: 2,
+      health: 10,
+      maxHealth: 10,
+      illness: {
+        type: null,
+        recurringDamage: 0,
+      },
+      exp: 12,
+    },
+    [{ name: "spear", target: "enemy", effect: "harm", value: 7 }] // Inventory of the enemy
+  );
+
+
+
+
 
 
 
@@ -198,6 +468,34 @@ makeEnemy(
 
 
 
+makeEnemy( // Create another enemy entity //! Van Cuba
+  k.vec2(100, 850), // Different position
+  "Vancuba", // Changed name
+  "vancuba", // Sprite ID
+  {
+    name: "spiralPattern", // Shader name
+    uniforms: () => ({
+      // Uniforms for the shader
+      u_time: k.time(),
+      u_color: k.Color.fromHex("#4883bd"),
+      u_aspect: 1,
+      u_opacity: 0.6,
+    }),
+  },
+  {
+    // Stats for the enemy
+    attack: 6,
+    defense: 2,
+    health: 10,
+    maxHealth: 10,
+    illness: {
+      type: null,
+      recurringDamage: 0,
+    },
+    exp: 12,
+  },
+  [{ name: "spear", target: "enemy", effect: "harm", value: 7 }] // Inventory of the enemy
+);
 
 
 
@@ -205,8 +503,34 @@ makeEnemy(
 
 
 
-
-
+makeEnemy( // Create another enemy entity //! Joker
+  k.vec2(690, 850), // Different position
+  "Joker", // Changed name
+  "joker", // Sprite ID
+  {
+    name: "spiralPattern", // Shader name
+    uniforms: () => ({
+      // Uniforms for the shader
+      u_time: k.time(),
+      u_color: k.Color.fromHex("#4883bd"),
+      u_aspect: 1,
+      u_opacity: 0.6,
+    }),
+  },
+  {
+    // Stats for the enemy
+    attack: 6,
+    defense: 2,
+    health: 10,
+    maxHealth: 10,
+    illness: {
+      type: null,
+      recurringDamage: 0,
+    },
+    exp: 12,
+  },
+  [{ name: "spear", target: "enemy", effect: "harm", value: 7 }] // Inventory of the enemy
+);
 
 
 
