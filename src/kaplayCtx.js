@@ -26,8 +26,8 @@ const k = kaplay({
   },
 });
 
-k.loadSprite("officer", "/enemies/officer.png");
-k.loadSprite("spider", "/enemies/spider.png");
+k.loadSprite("officer", "/enemies/wrazzix.png");
+k.loadSprite("spider", "/enemies/chaos.png");
 k.loadShaderURL("ringPattern", null, "/shaders/ringPattern.frag");
 k.loadShaderURL("trianglePattern", null, "/shaders/trianglePattern.frag");
 k.loadShaderURL("spiralPattern", null, "/shaders/spiralPattern.frag");

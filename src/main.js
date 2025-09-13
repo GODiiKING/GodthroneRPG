@@ -8,7 +8,7 @@ k.scene("playground", () => {
   // black background
   k.add([k.rect(k.width(), k.height()), k.color(0, 0, 0)]);
 
-  const player = makePlayer(k.center(), "Breeze");
+  const player = makePlayer(k.center(), "Beta Tester");
   player.setControls();
 
   makeEnemy(
@@ -67,7 +67,7 @@ k.scene("playground", () => {
 
   makeEnemy(
     k.vec2(600, 300),
-    "Officer",
+    "Wrazzix",
     "officer",
     {
       name: "spiralPattern",
